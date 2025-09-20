@@ -1,19 +1,13 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootApplication
-public class LearningManagementSystemApplication extends SpringBootServletInitializer {
+@SpringBootTest
+class LearningManagementSystemApplicationTests {
 
-    public static void main(String[] args) {
-        SpringApplication.run(LearningManagementSystemApplication.class, args);
+    @Test
+    void contextLoads() {
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(LearningManagementSystemApplication.class);
-    }
 }
